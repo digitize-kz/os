@@ -1,0 +1,2 @@
+- https://git.voronind.com/voronind/nixos/src/commit/b7b4c09d101e2ca398d31465657e7c7d73fc56b3/module/common/bash/module/Bootstrap.sh#L32
+- https://nixos.wiki/wiki/Impermanence

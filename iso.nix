@@ -14,13 +14,19 @@
 # if you use pulseaudio
   nixpkgs.config.pulseaudio = true;
 
-  services.xserver = {
+  # KDE 5
+  services.xserver.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
+  services.xserver.desktopManager.plasma5.enable = true;
+  environment.plasma5.excludePackages = with pkgs.libsForQt5; [
+    plasma-browser-integration
+    konsole
+    oxygen
+  ];
+  qt = {
     enable = true;
-    desktopManager = {
-      xterm.enable = false;
-      xfce.enable = true;
-    };
-    displayManager.defaultSession = "xfce";
+    platformTheme = "gnome";
+    style = "adwaita-dark";
   };
 
   environment.systemPackages = with pkgs; [
@@ -43,5 +49,6 @@
     })
 
     chromium
+    libreoffice
   ];
 }
