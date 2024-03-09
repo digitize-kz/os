@@ -40,24 +40,22 @@
 
         bradlc.vscode-tailwindcss
 
-        wayou.vscode-todo-highlight
-
         ms-python.python
         ms-toolsai.jupyter
 
         ms-azuretools.vscode-docker
 
         prisma.prisma
-        yoavbls.pretty-ts-errors
-        expo.vscode-expo-tools
+        # yoavbls.pretty-ts-errors
+        # expo.vscode-expo-tools
         dbaeumer.vscode-eslint
-        dsznajder.es7-react-js-snippets
+        # dsznajder.es7-react-js-snippets
 
         mikestead.dotenv
 
-        rvest.vs-code-prettier-eslint
+        # rvest.vs-code-prettier-eslint
         esbenp.prettier-vscode
-        mgmcdermott.vscode-language-babel
+        # mgmcdermott.vscode-language-babel
 
         unifiedjs.vscode-mdx
 
@@ -65,10 +63,8 @@
 
         golang.go
 
-
-        equinusocio.vsc-material-theme-icons
-        rafaelmardojai.vscode-gnome-theme
-
+        # equinusocio.vsc-material-theme-icons
+        # rafaelmardojai.vscode-gnome-theme
       ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
         {
           name = "remote-ssh-edit";
